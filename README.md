@@ -1,103 +1,115 @@
-# Food Delivery App
+#  Food Delivery App
 
-A full-stack food delivery application built with React frontend and Node.js backend.
+A modern **full-stack Food Delivery Application** built using **React** for the frontend and **Node.js + Express** for the backend.  
+The application allows users to browse restaurants, view menus, place orders, and manage deliveries with a smooth and responsive user experience.
 
-## Features
+---
 
-- User authentication and registration
-- Browse restaurants and menus
-- Add items to cart and place orders
-- Admin panel for restaurant and menu management
-- Responsive design
+## Project Description
 
-## Tech Stack
+The Food Delivery App is designed to simulate a real-world online food ordering platform.  
+It enables users to register, log in securely, explore multiple restaurants, add food items to a cart, and place orders.  
+An admin panel allows restaurant and menu management, making the system scalable and easy to maintain.
 
-**Frontend:**
+This project demonstrates practical implementation of **MERN stack concepts**, RESTful APIs, authentication, and database integration.
+
+---
+
+##  Project Objectives
+
+- Build a real-world full-stack web application
+- Implement secure authentication using JWT
+- Perform CRUD operations with MongoDB
+- Understand client–server architecture
+- Improve frontend UX with responsive design
+- Gain experience with Git and GitHub workflows
+
+---
+
+##  Features
+
+-  User Authentication (Register / Login)
+-  Browse Restaurants and Menus
+-  Add to Cart & Place Orders
+-  Order Management System
+-  Admin Panel for Restaurants & Menus
+-  JWT-based Authentication
+-  Fully Responsive UI
+-  MongoDB Atlas Cloud Database
+
+---
+
+##  Tech Stack
+
+### Frontend
 - React.js
+- HTML5
 - CSS3
-- Axios for API calls
+- Axios
 
-**Backend:**
+### Backend
 - Node.js
 - Express.js
 - MongoDB Atlas
-- JWT Authentication
-- bcryptjs for password hashing
+- JSON Web Tokens (JWT)
+- bcryptjs
 
-## Installation
+### Tools
+- Git & GitHub
+- VS Code
+- Postman
 
-### Backend Setup
+---
 
-1. Navigate to backend directory:
+##  Prerequisites
+
+- Node.js (v16+)
+- npm or yarn
+- MongoDB Atlas account
+- Git
+
+---
+
+##  Installation & Setup
+
+###  Clone the Repository
 ```bash
+git clone https://github.com/govindpawar1001/Food-Delivery-App.git
+cd food-delivery-app
+
+2️.Backend Setup
 cd backend
-```
-
-2. Install dependencies:
-```bash
 npm install
-```
 
-3. Create `.env` file with:
-```
+Create .env file:
+
 MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
+JWT_SECRET=your_secret_key
 PORT=3001
-```
 
-4. Populate sample data:
-```bash
-node sampleData.js
-```
-
-5. Start backend server:
-```bash
+Run backend:
 npm start
-```
 
-### Frontend Setup
+Backend URL:
+http://localhost:3001
 
-1. Navigate to frontend directory:
-```bash
+3. Frontend Setup
 cd frontend
-```
-
-2. Install dependencies:
-```bash
 npm install
-```
-
-3. Start frontend:
-```bash
 npm start
-```
 
-## Default Credentials
+Frontend URL:
 
-**Admin:**
-- Email: admin@gmail.com
-- Password: admin123
+http://localhost:3000
 
-**User:**
-- Email: user@example.com
-- Password: user123
+Default Login Credentials (Testing)
+Admin
+Email: admin@gmail.com
+Password: admin123
 
-## API Endpoints
+User
+Email: user@example.com
+Password: user123
 
-- `POST /api/auth/register` - User registration
-- `POST /api/auth/login` - User login
-- `GET /api/restaurants` - Get all restaurants
-- `GET /api/menu/:restaurantId` - Get restaurant menu
-- `POST /api/orders` - Place order
 
-## Restaurants
 
-- McDonald's - Fast food burgers and sides
-- Irani Cafe - Traditional Iranian cuisine
-- Subway - Fresh sandwiches and salads
-
-## Running the App
-
-1. Start backend server (port 3001)
-2. Start frontend (port 3000)
-3. Access app at http://localhost:3000
