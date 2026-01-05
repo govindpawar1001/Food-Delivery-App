@@ -8,6 +8,7 @@ const authRoutes = require('./routes/auth');
 const restaurantRoutes = require('./routes/restaurants');
 const menuRoutes = require('./routes/menu');
 const orderRoutes = require('./routes/orders');
+const userRoutes = require('./routes/users');
 
 // Connect to MongoDB Atlas
 connectDB();
@@ -24,6 +25,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/restaurants', restaurantRoutes);
 app.use('/api/menu', menuRoutes);
 app.use('/api/orders', orderRoutes);
+app.use('/api/users', userRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);

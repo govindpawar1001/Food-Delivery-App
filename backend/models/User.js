@@ -7,7 +7,8 @@ const userSchema = new mongoose.Schema({
   password: { type: String, required: true },
   phone: { type: String, required: true },
   address: { type: String, required: true },
-  isAdmin: { type: Boolean, default: false }
+  isAdmin: { type: Boolean, default: false },
+  isActive: { type: Boolean, default: true }
 }, { timestamps: true });
 
 userSchema.pre('save', async function(next) {

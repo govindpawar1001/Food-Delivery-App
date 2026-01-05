@@ -1,0 +1,37 @@
+const getFoodImage = (foodName) => {
+  const name = foodName.toLowerCase();
+  
+  if (name.includes('burger')) return 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop';
+  if (name.includes('pizza')) return 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop';
+  if (name.includes('fries')) return 'https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop';
+  if (name.includes('sandwich') || name.includes('sub')) return 'https://images.unsplash.com/photo-1555072956-7758afb4d7eb?w=400&h=300&fit=crop';
+  if (name.includes('chicken')) return 'https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop';
+  if (name.includes('pasta')) return 'https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?w=400&h=300&fit=crop';
+  if (name.includes('salad')) return 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop';
+  if (name.includes('tea') || name.includes('chai')) return 'https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=400&h=300&fit=crop';
+  if (name.includes('coffee')) return 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop';
+  if (name.includes('cake') || name.includes('dessert')) return 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop';
+  if (name.includes('ice cream')) return 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=300&fit=crop';
+  if (name.includes('donut')) return 'https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop';
+  if (name.includes('taco')) return 'https://images.unsplash.com/photo-1565299585323-38174c4a6471?w=400&h=300&fit=crop';
+  if (name.includes('sushi')) return 'https://images.unsplash.com/photo-1553621042-f6e147245754?w=400&h=300&fit=crop';
+  if (name.includes('noodle')) return 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop';
+  if (name.includes('soup')) return 'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop';
+  if (name.includes('rice')) return 'https://images.unsplash.com/photo-1516684669134-de6f7c473a2a?w=400&h=300&fit=crop';
+  if (name.includes('bread') || name.includes('bun')) return 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=300&fit=crop';
+  if (name.includes('onion ring')) return 'https://images.unsplash.com/photo-1639024471283-03518883512d?w=400&h=300&fit=crop';
+  if (name.includes('edamame')) return 'https://images.unsplash.com/photo-1609501676725-7186f0b5c4f8?w=400&h=300&fit=crop';
+  if (name.includes('ramen')) return 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=300&fit=crop';
+  if (name.includes('tempura')) return 'https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=400&h=300&fit=crop';
+  if (name.includes('miso')) return 'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop';
+  if (name.includes('gyoza') || name.includes('dumpling')) return 'https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=400&h=300&fit=crop';
+  if (name.includes('teriyaki')) return 'https://images.unsplash.com/photo-1562967914-608f82629710?w=400&h=300&fit=crop';
+  if (name.includes('maska')) return 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=300&fit=crop';
+  if (name.includes('veggie')) return 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop';
+  if (name.includes('wrap')) return 'https://images.unsplash.com/photo-1565299585323-38174c4a6471?w=400&h=300&fit=crop';
+  if (name.includes('smoothie')) return 'https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=400&h=300&fit=crop';
+  
+  return 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop';
+};
+
+export default getFoodImage;
